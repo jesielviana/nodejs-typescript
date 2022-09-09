@@ -8,4 +8,8 @@ Passos para configuração inicial do projeto:
 5. npm i --save-dev @types/express
 6. tsc --init
 
-Configuração do Eslint para Typescript: [https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/](https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/)
+### Mais configurações
+
+- Configuração do Eslint para Typescript: [https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/](https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/)
+
+- O que colocar no README.md do projeto: [https://www.freecodecamp.org/portuguese/news/como-escrever-um-bom-arquivo-readme-para-seu-projeto-do-github/](https://www.freecodecamp.org/portuguese/news/como-escrever-um-bom-arquivo-readme-para-seu-projeto-do-github/)
