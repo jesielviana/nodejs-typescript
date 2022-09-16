@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import rotasAluno from './alunos';
+import rotasDeUsuarios from './usuarios';
 
 const rotas = Router();
 
@@ -7,6 +7,6 @@ rotas.get('/', (req: Request, res: Response) => {
   res.send('Ola!');
 });
 
-rotas.use('/alunos', rotasAluno);
+rotas.use('/usuarios', rotasDeUsuarios);
 
 export default rotas;
