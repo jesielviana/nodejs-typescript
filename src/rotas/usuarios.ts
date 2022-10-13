@@ -18,7 +18,7 @@ rotas.post('/', async (req: Request, res: Response) => {
         email,
       },
     });
-    res.json(usuario);
+    res.status(201).json(usuario);
   } catch (erro) {
     res.status(400).send(erro);
   }

@@ -9,5 +9,5 @@ app.use(express.json());
 // middleware de tratamento de todas as rotas
 app.use('/', rotas);
 
-// inicia o servidor http na porta 3000
-app.listen(3000);
+export default app;
+

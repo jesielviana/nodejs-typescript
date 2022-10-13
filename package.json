@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
-    "lint": "eslint . --ext .ts"
+    "start": "tsc && node dist/src/server.js",
+    "lint": "eslint . --ext .ts",
+    "migrate": "dotenv -e .env.test yarn prisma migrate deploy",
+    "test": "yarn migrate && dotenv -e .env.test jest -i"
   },
   "keywords": [],
   "author": "",
@@ -16,11 +18,17 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/jest": "^29.1.2",
     "@types/node": "^18.7.16",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
+    "dotenv-cli": "^6.0.0",
     "eslint": "^8.23.0",
+    "jest": "^29.1.2",
     "prisma": "^4.3.1",
+    "supertest": "^6.3.0",
+    "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
   }
